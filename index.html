@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Auxílio-Doença e INSS | Noemia Ingrácio Advocacia</title>
+<meta name="description" content="Orientação previdenciária sobre Auxílio por Incapacidade Temporária (Auxílio-Doença), pedidos negados, benefícios cessados e documentação para o INSS.">
+<link rel="preload" as="image" href="img/equipe-800.webp" imagesrcset="img/equipe-480.webp 480w, img/equipe-800.webp 800w, img/equipe-1120.webp 1120w" imagesizes="(max-width: 860px) calc(100vw - 32px), 430px" type="image/webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Figtree:wght@400;500;600;700&display=swap">
+<!-- Google Tag Manager / Google Ads: inserir o snippet aqui -->
+<style>
+/* Layout: faixa verde-escura de autoridade no topo, corpo claro em colunas largas, dourado só em detalhes e na prova social */
+:root {
+  --green-900: #12302a;
+  --green-800: #1b4036;
+  --green-700: #24543f;
+  --green-100: #e3ebe5;
+  --gold: #b48a3c;
+  --gold-soft: #e9dcc0;
+  --paper: #f4f6f3;
+  --white: #ffffff;
+  --ink: #17221e;
+  --muted: #55625c;
+  --line: #d6ddd7;
+  --cta: #1f7a4d;
+  --cta-hover: #19663f;
+  --f-display: "Newsreader", "Georgia", "Times New Roman", serif;
+  --f-body: "Figtree", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --wrap: 1120px;
+  --gutter: clamp(16px, 4vw, 32px);
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--f-body); font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; height: auto; display: block; }
+picture { display: block; }
+figure { margin: 0; }
+a { color: inherit; }
+h1, h2, h3 { font-family: var(--f-display); font-weight: 500; line-height: 1.15; text-wrap: balance; margin: 0; letter-spacing: -0.01em; }
+p { margin: 0; }
+.wrap { max-width: var(--wrap); margin-inline: auto; padding-inline: var(--gutter); }
+section { padding-block: clamp(56px, 8vw, 96px); }
+.eyebrow { font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+.section-head { display: grid; gap: 14px; max-width: 680px; margin-bottom: clamp(32px, 5vw, 48px); }
+.section-head h2 { font-size: clamp(30px, 4.2vw, 44px); }
+.section-head p { color: var(--muted); font-size: 18px; }
+
+/* Botões */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 14px 26px; border-radius: 6px; font-weight: 600; font-size: 16px; text-decoration: none; transition: background .15s ease, transform .15s ease; cursor: pointer; border: 0; }
+.btn svg { width: 20px; height: 20px; flex: none; }
+.btn-primary { background: var(--cta); color: #fff; }
+.btn-primary:hover { background: var(--cta-hover); transform: translateY(-1px); }
+.btn-ghost { background: transparent; color: var(--green-800); border: 1.5px solid var(--green-800); }
+.btn-ghost:hover { background: var(--green-100); }
+.btn:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+.cta-note { font-size: 14px; color: var(--muted); }
+
+/* Header */
+/* Cabeçalho fixo: logo grande no topo da página, reduzido ao rolar (classe .is-scrolled via JS) */
+:root { --logo-top: 72px; --logo-scrolled: 44px; --head-top: calc(var(--logo-top) + 20px); }
+@media (min-width: 861px) { :root { --logo-top: 104px; --head-top: calc(var(--logo-top) + 28px); } }
+.topbar { position: fixed; inset: 0 0 auto; z-index: 20; padding-top: env(safe-area-inset-top, 0px); background: var(--green-900); color: #fff; transition: box-shadow .2s ease; }
+.topbar.is-scrolled { box-shadow: 0 4px 16px rgba(0, 0, 0, .18); }
+.topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: #fff; min-width: 0; }
+.brand-logo { display: block; height: var(--logo-top); width: auto; margin-block: 10px; transition: height .25s ease, margin .25s ease; }
+.topbar.is-scrolled .brand-logo { height: var(--logo-scrolled); margin-block: 8px; }
+.brand-oab { font-size: 12px; letter-spacing: 0.08em; color: var(--gold-soft); white-space: nowrap; }
+@media (prefers-reduced-motion: reduce) { .brand-logo { transition: none; } }
+.topbar .btn { min-height: 42px; padding: 10px 18px; font-size: 15px; }
+@media (max-width: 560px) { .topbar .btn span { display: none; } .topbar .btn { padding: 10px 12px; } }
+
+/* Hero */
+.hero { background: var(--green-900); color: #fff; padding-block: calc(env(safe-area-inset-top, 0px) + var(--head-top) + clamp(24px, 4vw, 48px)) 0; overflow: hidden; }
+.hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: clamp(28px, 5vw, 64px); align-items: end; }
+.hero-copy { display: grid; gap: 22px; padding-bottom: clamp(40px, 6vw, 72px); min-width: 0; }
+.hero .eyebrow { color: var(--gold-soft); }
+.hero .eyebrow .sep { opacity: .55; margin-inline: 6px; }
+.hero h1 { font-size: clamp(36px, 5.4vw, 60px); }
+.hero h1 em { font-style: italic; color: var(--gold-soft); }
+.hero-sub { font-size: clamp(17px, 1.8vw, 20px); color: #cfdcd5; max-width: 560px; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 20px; }
+.hero .cta-note { color: #a9bdb3; }
+.hero-photo { position: relative; align-self: end; min-width: 0; }
+.hero-photo img { width: 100%; aspect-ratio: 4 / 4.3; object-fit: cover; object-position: center 20%; border-radius: 8px 8px 0 0; }
+.hero-photo figcaption { position: absolute; left: 14px; bottom: 14px; background: rgba(18, 48, 42, .88); color: #e8efe9; font-size: 13px; padding: 8px 12px; border-radius: 4px; }
+@media (max-width: 860px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-copy { padding-bottom: 0; }
+  .hero-photo img { aspect-ratio: 4 / 3; border-radius: 8px 8px 0 0; }
+}
+
+/* Faixa de prova */
+.proof { background: var(--white); border-bottom: 1px solid var(--line); padding-block: 0; }
+.proof ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); }
+.proof li { padding: 24px 20px; display: grid; gap: 2px; border-left: 1px solid var(--line); }
+.proof li:first-child { border-left: 0; padding-left: 0; }
+.proof strong { font-family: var(--f-display); font-size: 28px; font-weight: 500; color: var(--green-800); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.proof span { font-size: 14px; color: var(--muted); }
+.stars { color: var(--gold); letter-spacing: 2px; font-size: 15px; }
+@media (max-width: 820px) {
+  .proof ul { grid-template-columns: 1fr 1fr; }
+  .proof li { padding: 18px 14px; }
+  .proof strong { font-size: 22px; }
+  .proof li:nth-child(odd) { border-left: 0; padding-left: 0; }
+  .proof li:nth-child(n+3) { border-top: 1px solid var(--line); }
+}
+
+/* Tipos de aposentadoria */
+.section-cta { margin-top: 32px; display: flex; justify-content: center; }
+.types-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.type { scroll-margin-top: 84px; background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: clamp(24px, 3vw, 32px); display: grid; gap: 14px; align-content: start; min-width: 0; }
+.type-tag { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.type h3 { font-size: clamp(21px, 2.2vw, 24px); color: var(--green-800); }
+.type p { color: var(--ink); }
+.type dl { margin: 0; display: grid; gap: 10px; padding-top: 14px; border-top: 1px solid var(--line); }
+.type dt { font-size: 13px; font-weight: 600; color: var(--green-700); }
+.type dd { margin: 0; font-size: 15.5px; color: var(--muted); }
+.type .link-cta { margin-top: 6px; font-weight: 600; font-size: 15px; color: var(--cta); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+.type .link-cta:hover { text-decoration: underline; }
+@media (max-width: 760px) { .types-grid { grid-template-columns: 1fr; } }
+
+/* Checklist antes de pedir */
+.check { background: var(--green-100); }
+.check-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(32px, 6vw, 72px); align-items: start; }
+.check .section-head { margin-bottom: 24px; }
+.check-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; background: var(--white); border-radius: 8px; border: 1px solid var(--line); }
+.check-list li { display: grid; grid-template-columns: 28px 1fr; gap: 14px; padding: 22px 24px; border-top: 1px solid var(--line); }
+.check-list li:first-child { border-top: 0; }
+.check-list svg { width: 24px; height: 24px; color: var(--green-700); margin-top: 3px; }
+.check-list h3 { font-family: var(--f-body); font-size: 17px; font-weight: 600; margin-bottom: 4px; }
+.check-list p { color: var(--muted); font-size: 16px; }
+.cnis { margin-top: 8px; font-size: 15px; color: var(--muted); border-left: 2px solid var(--gold); padding-left: 14px; }
+@media (max-width: 860px) { .check-grid { grid-template-columns: 1fr; } }
+
+/* Diferenciais */
+.diff-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.diff { background: var(--white); padding: 28px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.diff h3 { font-family: var(--f-body); font-size: 18px; font-weight: 600; color: var(--green-800); }
+.diff p { color: var(--muted); font-size: 16px; }
+@media (max-width: 860px) { .diff-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .diff-grid { grid-template-columns: 1fr; } }
+
+/* Como funciona: título à esquerda, cartões numerados à direita */
+.steps { background: var(--green-900); color: #fff; }
+.steps .eyebrow { color: var(--gold-soft); }
+.steps .section-head p { color: #b9cbc1; }
+.steps h2 em { font-style: italic; color: var(--gold-soft); display: block; }
+.steps-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: clamp(32px, 6vw, 72px); align-items: start; }
+.steps-intro { position: sticky; top: calc(88px + env(safe-area-inset-top, 0px)); }
+.steps .section-head { margin-bottom: 28px; }
+.steps .actions { display: grid; gap: 12px; justify-items: start; }
+.steps .cta-note { color: #a9bdb3; }
+.step-cards { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.step-cards li { display: grid; grid-template-columns: 52px 1fr; gap: 18px; align-items: start; background: #f6f7f4; color: var(--ink); border-radius: 10px; padding: 22px 24px; }
+.step-cards li:nth-child(odd) { background: #efe6d6; }
+.step-cards .num { width: 52px; height: 52px; border-radius: 6px; background: var(--green-700); color: #fff; display: grid; place-items: center; font-family: var(--f-display); font-size: 24px; font-variant-numeric: lining-nums; }
+.step-cards h3 { font-size: 23px; margin-bottom: 6px; color: var(--green-900); }
+.step-cards p { color: #4a5751; font-size: 16px; }
+@media (max-width: 860px) {
+  .steps-grid { grid-template-columns: 1fr; }
+  .steps-intro { position: static; display: contents; }
+  .steps .section-head { order: 0; }
+  .step-cards { order: 1; }
+  .steps .actions { order: 2; margin-top: 8px; }
+}
+@media (max-width: 420px) { .step-cards li { grid-template-columns: 1fr; gap: 12px; padding: 20px; } .step-cards .num { width: 44px; height: 44px; font-size: 21px; } }
+
+/* Depoimentos: carrossel no padrão de widget do Google */
+.carousel { position: relative; }
+.track { display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding: 4px 2px 12px; scrollbar-width: thin; }
+.track:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+.gcard { flex: 0 0 calc((100% - 40px) / 3); scroll-snap-align: start; background: var(--white); border: 1px solid var(--line); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.gcard header { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.gcard header div { min-width: 0; }
+.gcard header b { display: block; font-size: 16px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.gcard header small { color: var(--muted); font-size: 13px; }
+.avatar { width: 40px; height: 40px; border-radius: 50%; color: #fff; display: grid; place-items: center; font-weight: 600; font-size: 17px; flex: none; }
+.gcard .stars { color: #f4b400; font-size: 18px; letter-spacing: 1px; }
+.gtext { font-size: 16px; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.gcard.open .gtext { -webkit-line-clamp: unset; display: block; }
+.more { align-self: flex-start; background: none; border: 0; padding: 0; color: var(--muted); font: inherit; font-size: 14px; cursor: pointer; }
+.more:hover { color: var(--green-700); text-decoration: underline; }
+.more[hidden] { display: none; }
+.nav { position: absolute; top: 42%; width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--white); color: var(--ink); font-size: 24px; line-height: 1; cursor: pointer; box-shadow: 0 2px 8px rgba(18,48,42,.12); z-index: 2; }
+.nav.prev { left: -20px; } .nav.next { right: -20px; }
+.nav:disabled { opacity: 0; pointer-events: none; }
+.gsummary { margin-top: 18px; text-align: center; font-size: 15px; color: var(--muted); }
+.gsummary b { color: var(--ink); }
+.gsummary a { color: var(--green-700); font-weight: 600; }
+.gsummary small { font-size: 12px; }
+@media (max-width: 900px) { .gcard { flex-basis: calc((100% - 20px) / 2); } .nav.prev { left: -8px; } .nav.next { right: -8px; } }
+@media (max-width: 560px) { .gcard { flex-basis: 86%; } .nav { display: none; } }
+
+/* Sobre */
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 72px); align-items: center; }
+.about-copy { display: grid; gap: 18px; min-width: 0; }
+.about-copy h2 { font-size: clamp(30px, 4.2vw, 44px); }
+.about-copy p { color: var(--muted); }
+.about-copy .sig { color: var(--ink); font-size: 15px; padding-top: 16px; border-top: 1px solid var(--line); }
+.about-copy .sig b { display: block; font-family: var(--f-display); font-size: 20px; font-weight: 500; }
+.about-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.about-photos img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px; }
+.about-photos figure { margin: 0; display: grid; gap: 6px; }
+.about-photos figcaption { font-size: 13px; color: var(--muted); }
+.about-address { grid-column: 1 / -1; background: var(--white); border: 1px solid var(--line); border-radius: 6px; padding: 16px 18px; font-size: 15px; }
+.about-address b { display: block; color: var(--green-800); }
+@media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; } }
+
+/* FAQ */
+.faq { background: var(--white); border-top: 1px solid var(--line); }
+.faq .section-head .btn { justify-self: start; margin-top: 6px; }
+.faq-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(32px, 6vw, 72px); align-items: start; }
+.faq details { border-top: 1px solid var(--line); }
+.faq details:last-child { border-bottom: 1px solid var(--line); }
+.faq summary { list-style: none; cursor: pointer; padding: 20px 36px 20px 0; font-weight: 600; font-size: 17px; position: relative; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: ""; position: absolute; right: 6px; top: 50%; width: 10px; height: 10px; border-right: 2px solid var(--green-700); border-bottom: 2px solid var(--green-700); transform: translateY(-70%) rotate(45deg); transition: transform .2s ease; }
+.faq details[open] summary::after { transform: translateY(-30%) rotate(225deg); }
+.faq details p { padding: 0 0 22px; color: var(--muted); max-width: 640px; }
+@media (max-width: 860px) { .faq-grid { grid-template-columns: 1fr; } }
+
+/* Outros serviços */
+.others-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.other { border-top: 2px solid var(--green-800); padding-top: 18px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.other h3 { font-size: 22px; }
+.other p { color: var(--muted); font-size: 16px; }
+.other a { font-weight: 600; font-size: 15px; color: var(--cta); text-decoration: none; }
+.other a:hover { text-decoration: underline; }
+@media (max-width: 760px) { .others-grid { grid-template-columns: 1fr; } }
+
+/* Fechamento */
+.closing { background: var(--green-800); color: #fff; text-align: left; }
+.closing .wrap { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 32px; align-items: center; }
+.closing h2 { font-size: clamp(30px, 4.4vw, 48px); }
+.closing p { color: #c7d6ce; margin-top: 14px; font-size: 18px; max-width: 560px; }
+.closing .actions { display: grid; gap: 10px; justify-items: start; }
+.closing .cta-note { color: #b9cbc1; }
+@media (max-width: 760px) { .closing .wrap { grid-template-columns: 1fr; } }
+
+/* Rodapé */
+.footer { background: var(--green-900); color: #b9cbc1; font-size: 14px; padding-block: 40px calc(40px + env(safe-area-inset-bottom, 0px)); }
+.footer .wrap { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 28px; }
+.footer-logo { display: block; height: 72px; width: auto; margin-bottom: 18px; }
+.footer b { color: #fff; font-weight: 600; display: block; margin-bottom: 6px; }
+.footer a { color: #e3ebe5; }
+.footer .legal { grid-column: 1 / -1; border-top: 1px solid rgba(255,255,255,.12); padding-top: 20px; font-size: 13px; color: #8fa79b; }
+@media (max-width: 760px) { .footer .wrap { grid-template-columns: 1fr; } }
+
+/* Barra fixa de CTA no celular */
+.mobile-bar { display: none; }
+@media (max-width: 760px) {
+  .mobile-bar { display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)); background: rgba(18, 48, 42, .96); box-shadow: 0 -6px 18px rgba(18, 48, 42, .25); }
+  .mobile-bar .btn { width: 100%; }
+  .footer { padding-bottom: calc(110px + env(safe-area-inset-bottom, 0px)); }
+}
+
+/* ===== Ajustes LP02 ===== */
+.sit h3 { font-size: clamp(21px, 2.2vw, 24px); }
+.sit .btn { margin-top: auto; justify-self: start; min-height: 46px; padding: 10px 18px; font-size: 15px; }
+.type.sit { grid-template-rows: auto auto 1fr auto; }
+.req-close { margin-top: 18px; color: var(--muted); font-size: 16px; }
+.analysis-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.analysis-list li { display: grid; gap: 8px; align-content: start; border-top: 2px solid var(--green-800); padding-top: 16px; min-width: 0; }
+.analysis-list .anum { font-family: var(--f-display); font-size: 30px; color: var(--gold); line-height: 1; }
+.analysis-list h3 { font-family: var(--f-body); font-size: 18px; font-weight: 600; color: var(--green-800); }
+.analysis-list p { color: var(--muted); font-size: 16px; }
+@media (max-width: 900px) { .analysis-list { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .analysis-list { grid-template-columns: 1fr; } }
+.diff-grid.four { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 560px) { .diff-grid.four { grid-template-columns: 1fr; } }
+.diff-intro { color: var(--muted); font-size: 18px; max-width: 680px; margin-top: -24px; margin-bottom: 32px; }
+.track.few .gcard { flex-basis: calc((100% - 20px) / 2); }
+@media (max-width: 560px) { .track.few .gcard { flex-basis: 86%; } }
+.faq-cta { margin-top: 28px; }
+.closing .support { font-size: 14px; color: #b9cbc1; margin-top: 0; }
+.pending { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: .04em; color: #7a4a00; background: #fbe7b5; border-radius: 4px; padding: 2px 8px; }
+/* Barra fixa: só aparece depois da primeira dobra */
+@media (max-width: 760px) {
+  .mobile-bar { transform: translateY(110%); transition: transform .25s ease; }
+  .mobile-bar.show { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) { .mobile-bar { transition: none; } }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript): inserir aqui, logo após a abertura do <body> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-chat" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m7.5 12.5 3 3 6-6.5"/></symbol>
+</svg>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Noemia Ingrácio Advocacia, início">
+      <img class="brand-logo" src="img/logo.png" alt="Noemia Ingrácio Advocacia" width="283" height="213">
+      <span class="brand-oab">OAB/PR 57.087</span>
+    </a>
+    <a class="btn btn-primary" data-cta="header" data-ev="whatsapp_click_header" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20orienta%C3%A7%C3%A3o%20sobre%20o%20Aux%C3%ADlio%20por%20Incapacidade%20Tempor%C3%A1ria%20%28Aux%C3%ADlio-Doen%C3%A7a%29%20e%20entender%20as%20possibilidades%20para%20o%20meu%20caso." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg><span>Falar no WhatsApp</span></a>
+  </div>
+</header>
+
+<main id="inicio">
+  <!-- 01. Hero -->
+  <section class="hero" id="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Advocacia previdenciária <span class="sep" aria-hidden="true">|</span> Auxílio-doença e INSS</p>
+        <h1>Está sem condições de trabalhar por <em>motivo de saúde</em>?</h1>
+        <p class="hero-sub">O Auxílio por Incapacidade Temporária, antigo Auxílio-Doença, possui requisitos específicos. Se você precisa solicitar o benefício, teve o pedido negado ou o pagamento interrompido, nossa equipe pode orientar você sobre as possibilidades para o seu caso.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" data-cta="hero" data-ev="whatsapp_click_hero" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20orienta%C3%A7%C3%A3o%20sobre%20o%20Aux%C3%ADlio%20por%20Incapacidade%20Tempor%C3%A1ria%20%28Aux%C3%ADlio-Doen%C3%A7a%29%20e%20entender%20as%20possibilidades%20para%20o%20meu%20caso." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Conversar sobre meu benefício</a>
+          <span class="cta-note">Atendimento pelo WhatsApp <span aria-hidden="true">|</span> Presencial em Curitiba ou online</span>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <picture>
+          <source type="image/webp" srcset="img/equipe-480.webp 480w, img/equipe-800.webp 800w, img/equipe-1120.webp 1120w" sizes="(max-width: 860px) calc(100vw - 32px), 430px">
+          <img src="img/equipe-800.jpg" alt="Dra. Noemia Ingrácio e a equipe do escritório" width="800" height="1000" fetchpriority="high" decoding="async">
+        </picture>
+        <figcaption>Dra. Noemia Ingrácio e equipe</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 02. Credibilidade -->
+  <section class="proof" aria-label="Destaques do escritório">
+    <div class="wrap">
+      <ul>
+        <li><strong>Desde 2006</strong><span>Atuação previdenciária em Curitiba</span></li>
+        <li><strong>5,0 <span class="stars" aria-hidden="true">★★★★★</span></strong><span>Nota no Google</span></li>
+        <li><strong>875</strong><span>avaliações no Google (13/10/2026)</span></li>
+        <li><strong>INSS e Justiça</strong><span>Atuação administrativa e, quando cabível, judicial</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 03. Situações -->
+  <section id="situacoes">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Auxílio por Incapacidade Temporária</p>
+        <h2>Qual destas situações se parece com a sua?</h2>
+        <p>Cada pedido de Auxílio por Incapacidade Temporária tem particularidades. Identifique sua situação para compreender como o escritório pode orientar você.</p>
+      </div>
+      <div class="types-grid">
+        <article class="type sit" id="solicitacao">
+          <span class="type-tag">Primeira solicitação</span>
+          <h3>Preciso solicitar o Auxílio-Doença</h3>
+          <p>Você está temporariamente sem condições de trabalhar por motivo de saúde e precisa entender os requisitos, documentos e procedimentos para solicitar o benefício ao INSS?</p>
+          <a class="btn btn-ghost" data-cta="situacao-solicitacao" data-ev="whatsapp_click_solicitacao" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Preciso%20de%20orienta%C3%A7%C3%A3o%20para%20solicitar%20o%20Aux%C3%ADlio-Doen%C3%A7a%20ao%20INSS." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Conversar sobre a solicitação</a>
+        </article>
+        <article class="type sit" id="negado">
+          <span class="type-tag">Benefício negado</span>
+          <h3>Meu Auxílio-Doença foi negado</h3>
+          <p>Você solicitou o benefício, mas recebeu uma resposta negativa do INSS? A análise do motivo da negativa é importante para identificar as alternativas administrativas ou judiciais aplicáveis.</p>
+          <a class="btn btn-ghost" data-cta="situacao-negado" data-ev="whatsapp_click_negado" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Meu%20pedido%20de%20Aux%C3%ADlio-Doen%C3%A7a%20foi%20negado%20pelo%20INSS%20e%20gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20minha%20situa%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Conversar sobre benefício negado</a>
+        </article>
+        <article class="type sit" id="cessado">
+          <span class="type-tag">Benefício cessado</span>
+          <h3>Meu benefício foi cessado</h3>
+          <p>O INSS encerrou o pagamento, mas você continua enfrentando limitações para exercer seu trabalho? É importante avaliar a decisão, os documentos médicos e os procedimentos disponíveis.</p>
+          <a class="btn btn-ghost" data-cta="situacao-cessado" data-ev="whatsapp_click_cessado" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Meu%20Aux%C3%ADlio-Doen%C3%A7a%20foi%20cessado%20e%20gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20as%20possibilidades%20para%20o%20meu%20caso." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Conversar sobre benefício cessado</a>
+        </article>
+        <article class="type sit" id="pericia">
+          <span class="type-tag">Documentos e perícia</span>
+          <h3>Tenho dúvidas sobre documentos ou perícia</h3>
+          <p>Você precisa apresentar atestados, laudos ou exames, ou tem dúvidas sobre a avaliação médica do INSS? A orientação adequada depende da situação do pedido e da documentação disponível.</p>
+          <a class="btn btn-ghost" data-cta="situacao-pericia" data-ev="whatsapp_click_pericia" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Tenho%20d%C3%BAvidas%20sobre%20a%20documenta%C3%A7%C3%A3o%20m%C3%A9dica%20e%20a%20per%C3%ADcia%20do%20INSS%20para%20o%20Aux%C3%ADlio-Doen%C3%A7a." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Conversar sobre documentação e perícia</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04. Quem pode ter direito -->
+  <section class="check" id="direito">
+    <div class="wrap check-grid">
+      <div>
+        <div class="section-head">
+          <p class="eyebrow">Quem pode ter direito</p>
+          <h2>Ter uma doença é suficiente para receber o Auxílio-Doença?</h2>
+          <p>O diagnóstico médico é importante, mas não determina sozinho o direito ao benefício. O INSS analisa a incapacidade temporária para o trabalho ou atividade habitual e os requisitos previdenciários aplicáveis ao segurado.</p>
+        </div>
+        <a class="btn btn-primary" data-cta="direito" data-ev="whatsapp_click" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20orienta%C3%A7%C3%A3o%20sobre%20o%20Aux%C3%ADlio%20por%20Incapacidade%20Tempor%C3%A1ria%20%28Aux%C3%ADlio-Doen%C3%A7a%29%20e%20entender%20as%20possibilidades%20para%20o%20meu%20caso." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Conversar sobre meu benefício</a>
+      </div>
+      <div>
+        <ul class="check-list">
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><div><h3>Incapacidade para o trabalho</h3><p>É necessário demonstrar a incapacidade temporária para a atividade habitual, observadas as condições legais do benefício.</p></div></li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><div><h3>Qualidade de segurado</h3><p>É preciso verificar a situação previdenciária da pessoa perante o INSS, inclusive as hipóteses de manutenção dessa qualidade.</p></div></li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><div><h3>Carência, quando exigida</h3><p>Em regra, há exigência de contribuições mínimas, mas existem situações legais de dispensa de carência.</p></div></li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><div><h3>Documentação e avaliação médica</h3><p>Atestados, laudos, exames e a avaliação realizada no procedimento do INSS podem ser relevantes para a análise. Conforme o caso, a avaliação pode ocorrer por documentação médica ou perícia presencial.</p></div></li>
+        </ul>
+        <p class="req-close">Cada situação exige uma análise individualizada. O histórico de contribuições, os documentos médicos e as circunstâncias do afastamento podem influenciar o enquadramento do pedido.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05. O que precisa ser analisado -->
+  <section id="analise">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">O que precisa ser analisado</p>
+        <h2>Antes de solicitar ou contestar uma decisão do INSS, entenda o que precisa ser avaliado.</h2>
+        <p>Uma solicitação inicial, uma negativa e a cessação de um benefício exigem análises diferentes. Conhecer os documentos e a situação previdenciária ajuda a identificar os procedimentos adequados.</p>
+      </div>
+      <ol class="analysis-list">
+        <li><span class="anum">01</span><h3>Histórico previdenciário</h3><p>Verificação de contribuições, vínculos e qualidade de segurado.</p></li>
+        <li><span class="anum">02</span><h3>Documentação médica</h3><p>Análise dos atestados, laudos, exames e demais informações pertinentes à incapacidade relatada.</p></li>
+        <li><span class="anum">03</span><h3>Situação do benefício</h3><p>Identificação do estágio do pedido, exigências, motivo da negativa ou circunstâncias da cessação.</p></li>
+        <li><span class="anum">04</span><h3>Caminhos disponíveis</h3><p>Avaliação das medidas administrativas ou judiciais juridicamente cabíveis para o caso.</p></li>
+        </ol>
+      <div class="section-cta">
+        <a class="btn btn-primary" data-cta="analise" data-ev="whatsapp_click" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20minha%20situa%C3%A7%C3%A3o%20previdenci%C3%A1ria%20relacionada%20ao%20Aux%C3%ADlio-Doen%C3%A7a." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Conversar sobre minha situação</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06. Diferenciais -->
+  <section style="background: var(--green-100);">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Diferenciais</p>
+        <h2>Orientação previdenciária para compreender seu caso e os próximos passos.</h2>
+      </div>
+      <p class="diff-intro">A Noemia Ingrácio Advocacia atua em Direito Previdenciário, oferecendo atendimento individualizado para análise de benefícios e procedimentos perante o INSS.</p>
+      <div class="diff-grid four">
+        <div class="diff"><h3>Atuação previdenciária</h3><p>Experiência do escritório em solicitações de benefícios por incapacidade, negativas e cessações perante o INSS.</p></div>
+        <div class="diff"><h3>Análise individualizada</h3><p>Avaliação do histórico de contribuições, da qualidade de segurado e da documentação médica de cada caso.</p></div>
+        <div class="diff"><h3>Orientação sobre os procedimentos</h3><p>Esclarecimento sobre solicitação inicial, pedido de prorrogação, recurso administrativo ou ação judicial, de acordo com a situação do benefício.</p></div>
+        <div class="diff"><h3>Atendimento presencial ou online</h3><p>Atendimento presencial no Centro de Curitiba ou online, com orientação sobre os atestados, laudos e documentos previdenciários necessários ao seu pedido.</p></div>
+        </div>
+    </div>
+  </section>
+
+  <!-- 07. Como funciona -->
+  <section class="steps">
+    <div class="wrap">
+      <div class="steps-grid">
+      <div class="steps-intro">
+      <div class="section-head">
+        <p class="eyebrow">Como funciona</p>
+        <h2>Como funciona o atendimento?</h2>
+        <p>Tudo começa com uma conversa pelo WhatsApp.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" data-cta="como-funciona" data-ev="whatsapp_click" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20orienta%C3%A7%C3%A3o%20sobre%20o%20Aux%C3%ADlio%20por%20Incapacidade%20Tempor%C3%A1ria%20%28Aux%C3%ADlio-Doen%C3%A7a%29%20e%20entender%20as%20possibilidades%20para%20o%20meu%20caso." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Quero conversar sobre minhas possibilidades</a>
+      </div>
+      </div>
+      <ol class="step-cards">
+        <li><span class="num" aria-hidden="true">01</span><div><h3>Entre em contato</h3><p>Inicie uma conversa pelo WhatsApp e informe, de maneira breve, sua situação em relação ao Auxílio-Doença.</p></div></li>
+        <li><span class="num" aria-hidden="true">02</span><div><h3>Entendemos sua situação</h3><p>A equipe orientará sobre as informações e os documentos necessários para compreender a demanda.</p></div></li>
+        <li><span class="num" aria-hidden="true">03</span><div><h3>Analisamos as possibilidades</h3><p>O caso será avaliado juridicamente para identificar os procedimentos e alternativas cabíveis.</p></div></li>
+        <li><span class="num" aria-hidden="true">04</span><div><h3>Seguimos juntos no INSS</h3><p>Se você decidir seguir com o escritório, cuidamos do pedido, das perícias e dos recursos, e mantemos você informado a cada etapa.</p></div></li>
+      </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08. Avaliações -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Avaliações no Google</p>
+        <h2>A confiança de quem conhece nosso trabalho.</h2>
+        <p>Avaliações reais sobre a experiência de atendimento da Noemia Ingrácio Advocacia.</p>
+      </div>
+      <div class="carousel">
+        <button type="button" class="nav prev" aria-label="Avaliações anteriores">‹</button>
+        <div class="track" tabindex="0" aria-label="Avaliações de clientes">
+          <article class="gcard">
+            <header><span class="avatar" style="background:#8a5a9e" aria-hidden="true">M</span><div><b>Márcia Kovalski Bergonse</b><small>Avaliação no Google</small></div></header>
+            <span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
+            <p class="gtext" id="rv0">Escritório altamente qualificado sobre as questões previdenciárias. A advogada Noemia sempre conduziu com muita expertise as minhas dúvidas e ações. Super recomendo!</p>
+            <button type="button" class="more" aria-expanded="false" aria-controls="rv0">Leia mais</button>
+          </article>
+          <article class="gcard">
+            <header><span class="avatar" style="background:#1a73c8" aria-hidden="true">E</span><div><b>Edson Americo</b><small>Avaliação no Google</small></div></header>
+            <span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
+            <p class="gtext" id="rv1">Me indicaram o escritório, fui atendido pela Dra. Daniele, que explicou muito bem. Indico o escritório pelo profissionalismo e atendimento (recepção: Dirlene, atenciosa, objetiva e paciente).</p>
+            <button type="button" class="more" aria-expanded="false" aria-controls="rv1">Leia mais</button>
+          </article>
+          <article class="gcard">
+            <header><span class="avatar" style="background:#9c4dcc" aria-hidden="true">J</span><div><b>Jussara Castagna</b><small>Avaliação no Google</small></div></header>
+            <span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
+            <p class="gtext" id="rv2">Excelente atendimento. Dra. Ângela é atenciosa e muito competente. As meninas da recepção são super atenciosas, local agradável, atendimento pelo WhatsApp também, sempre atendida rapidamente e com clareza e profissionalismo. Agradeço a atenção e o atendimento das profissionais e funcionários. Super indico!</p>
+            <button type="button" class="more" aria-expanded="false" aria-controls="rv2">Leia mais</button>
+          </article>
+          <article class="gcard">
+            <header><span class="avatar" style="background:#5c6bc0" aria-hidden="true">R</span><div><b>Rosane Moreira</b><small>Avaliação no Google</small></div></header>
+            <span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
+            <p class="gtext" id="rv3">As secretárias são super atenciosas e simpáticas. Fui muito bem atendida! A Dra. Noemia tirou todas minhas dúvidas e me deixou à vontade para tomar decisões. Super indico! E tenho boas referências de um parente que já utilizou os serviços desse escritório de advocacia.</p>
+            <button type="button" class="more" aria-expanded="false" aria-controls="rv3">Leia mais</button>
+          </article>
+          <article class="gcard">
+            <header><span class="avatar" style="background:#c2185b" aria-hidden="true">E</span><div><b>Elisangela Candido</b><small>Avaliação no Google</small></div></header>
+            <span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
+            <p class="gtext" id="rv4">Foi muito bom o atendimento com a Dra. Noemia. Escritório bem localizado, recepção atenciosa e simpática, me ajudou por telefone e presencialmente. Recomendo o escritório.</p>
+            <button type="button" class="more" aria-expanded="false" aria-controls="rv4">Leia mais</button>
+          </article>
+
+        </div>
+        <button type="button" class="nav next" aria-label="Próximas avaliações">›</button>
+      </div>
+      <p class="gsummary">Avaliação geral no Google <b>5,0 de 5</b>, com base em <b>875 avaliações</b>. <a href="https://www.google.com/search?q=Noemia+Ingr%C3%A1cio+Advocacia+Curitiba" target="_blank" rel="noopener">Ver todas no Google</a><br><small>Dados consultados em 13/10/2026.</small></p>
+    </div>
+  </section>
+
+  <!-- 09. Sobre -->
+  <section style="background: var(--green-100);">
+    <div class="wrap about-grid">
+      <div class="about-copy">
+        <p class="eyebrow">Sobre o escritório</p>
+        <h2>Conheça a Noemia Ingrácio Advocacia.</h2>
+        <p>Com atuação desde 2006, a Noemia Ingrácio Advocacia desenvolve seu trabalho na área previdenciária, oferecendo orientação jurídica individualizada a pessoas que precisam compreender seus direitos e os procedimentos relacionados aos benefícios do INSS.</p>
+        <p class="sig"><b>Dra. Noemia Ingrácio</b>Fundadora e diretora · OAB/PR 57.087<br>Pós-graduada em Direito Previdenciário, Processo Civil e Direito Civil.</p>
+      </div>
+      <div class="about-photos">
+        <figure><picture><source type="image/webp" srcset="img/escritorio-recepcao-400.webp 400w, img/escritorio-recepcao-800.webp 800w" sizes="(max-width: 860px) calc(50vw - 23px), 240px"><img src="img/escritorio-recepcao-800.jpg" alt="Recepção do escritório" width="800" height="565" loading="lazy" decoding="async"></picture><figcaption>Recepção</figcaption></figure>
+        <figure><picture><source type="image/webp" srcset="img/escritorio-sala-400.webp 400w, img/escritorio-sala-800.webp 800w" sizes="(max-width: 860px) calc(50vw - 23px), 240px"><img src="img/escritorio-sala-800.jpg" alt="Sala de trabalho da equipe" width="800" height="565" loading="lazy" decoding="async"></picture><figcaption>Sala da equipe</figcaption></figure>
+        <div class="about-address"><b>Edifício Minas Gerais, 3º andar, sala 303</b>Rua XV de Novembro, 270, Centro, Curitiba/PR · CEP 80020-310<br>Telefone: (41) 3323-4647</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. FAQ -->
+  <section class="faq">
+    <div class="wrap faq-grid">
+      <div class="section-head">
+        <p class="eyebrow">Perguntas frequentes</p>
+        <h2>Dúvidas sobre o Auxílio-Doença</h2>
+        <p>Se a sua dúvida não estiver aqui, a equipe responde pelo WhatsApp.</p>
+      </div>
+      <div>
+        <details><summary>Auxílio-Doença e Auxílio por Incapacidade Temporária são o mesmo benefício?</summary><p>Sim. Auxílio-Doença é o nome pelo qual o benefício ficou popularmente conhecido. A denominação atual é Auxílio por Incapacidade Temporária. Ele é destinado a segurados que preencham os requisitos legais e comprovem incapacidade temporária para o trabalho ou atividade habitual.</p></details>
+        <details><summary>Quem pode ter direito ao Auxílio-Doença?</summary><p>Em linhas gerais, é necessário comprovar incapacidade temporária para o trabalho ou atividade habitual pelo período exigido em lei, possuir qualidade de segurado e cumprir a carência quando aplicável. Existem exceções e particularidades que precisam ser avaliadas individualmente.</p></details>
+        <details><summary>Tenho uma doença diagnosticada. Isso garante o benefício?</summary><p>Não. O diagnóstico, isoladamente, não garante a concessão. É necessário avaliar se a condição de saúde provoca incapacidade temporária para o trabalho ou atividade habitual e se os demais requisitos previdenciários estão presentes.</p></details>
+        <details><summary>Meu Auxílio-Doença foi negado. O que posso fazer?</summary><p>É importante identificar o motivo da negativa. Dependendo do caso, podem existir alternativas administrativas ou judiciais. A análise da decisão e dos documentos permite avaliar quais medidas são juridicamente cabíveis.</p></details>
+        <details><summary>Meu benefício foi cortado, mas continuo sem condições de trabalhar. E agora?</summary><p>A cessação do benefício precisa ser examinada considerando a decisão do INSS, os prazos aplicáveis, o histórico do benefício e a documentação médica atualizada. Conforme a situação, podem existir procedimentos para solicitar a continuidade ou discutir o encerramento do pagamento.</p></details>
+        <details><summary>Quais documentos médicos devo apresentar?</summary><p>Atestados, laudos, relatórios e exames podem ser relevantes. Os documentos devem conter informações adequadas sobre a condição de saúde e suas repercussões na capacidade de trabalho. As exigências específicas dependem do procedimento adotado pelo INSS.</p></details>
+        <details><summary>Preciso passar por perícia presencial?</summary><p>Nem sempre. Conforme as regras e as condições do requerimento, o INSS pode realizar análise documental por meio do Atestmed ou exigir avaliação presencial. O procedimento aplicável deve ser verificado no caso concreto.</p></details>
+        <details><summary>Posso solicitar o benefício mesmo estando desempregado?</summary><p>Em determinadas situações, sim. É necessário verificar se a pessoa ainda mantém a qualidade de segurado, inclusive durante eventual período de graça, além dos demais requisitos legais.</p></details>
+        <details><summary>Preciso ir até o escritório?</summary><p>Não necessariamente. O escritório realiza atendimento presencial no Centro de Curitiba e também disponibiliza atendimento online, conforme a abrangência de atendimento confirmada pela equipe.</p></details>
+        <details><summary>Como funcionam os honorários advocatícios?</summary><p>Os honorários dependem da natureza e das particularidades do serviço jurídico. As condições são esclarecidas previamente pelo escritório, antes da formalização de eventual contratação.</p></details>
+        <div class="faq-cta"><a class="btn btn-primary" data-cta="faq" data-ev="whatsapp_click" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20orienta%C3%A7%C3%A3o%20sobre%20o%20Aux%C3%ADlio%20por%20Incapacidade%20Tempor%C3%A1ria%20%28Aux%C3%ADlio-Doen%C3%A7a%29%20e%20entender%20as%20possibilidades%20para%20o%20meu%20caso." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Conversar sobre meu benefício</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Fechamento -->
+  <section class="closing">
+    <div class="wrap">
+      <div>
+        <h2>Precisa solicitar o Auxílio-Doença ou teve seu benefício negado ou cessado?</h2>
+        <p>Converse com a equipe da Dra. Noemia Ingrácio e receba orientação sobre os procedimentos e possibilidades jurídicas aplicáveis à sua situação.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" data-cta="fechamento" data-ev="whatsapp_click_final" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20orienta%C3%A7%C3%A3o%20sobre%20o%20Aux%C3%ADlio%20por%20Incapacidade%20Tempor%C3%A1ria%20%28Aux%C3%ADlio-Doen%C3%A7a%29%20e%20entender%20as%20possibilidades%20para%20o%20meu%20caso." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Conversar sobre meu benefício</a>
+        <span class="cta-note">Noemia Ingrácio Advocacia | Atendimento previdenciário presencial e online.</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div><img class="footer-logo" src="img/logo.png" alt="" width="283" height="213"><b>Noemia Ingrácio Advocacia</b>Atuação dedicada ao Direito Previdenciário desde 2006.<br>Dra. Noemia Ingracio de Silva · OAB/PR 57.087</div>
+    <div><b>Endereço</b>Rua XV de Novembro, 270, sala 303<br>Edifício Minas Gerais, Centro<br>Curitiba/PR · CEP 80020-310</div>
+    <div><b>Contato</b>WhatsApp e telefone: (41) 3323-4647<br>contato@noemiaingracio.adv.br<br><a href="https://noemiaingracio.adv.br/" target="_blank" rel="noopener">noemiaingracio.adv.br</a></div>
+    <p class="legal">Conteúdo de caráter informativo, conforme o Código de Ética e Disciplina da OAB e o Provimento 205/2021. A análise de cada caso depende da documentação e das regras aplicáveis. <a href="https://noemiaingracio.adv.br/politica-de-privacidade-2/" target="_blank" rel="noopener">Política de Privacidade</a></p>
+  </div>
+</footer>
+
+<div class="mobile-bar" id="mobileBar">
+  <a class="btn btn-primary" data-cta="barra-mobile" data-ev="whatsapp_click" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20orienta%C3%A7%C3%A3o%20sobre%20o%20Aux%C3%ADlio%20por%20Incapacidade%20Tempor%C3%A1ria%20%28Aux%C3%ADlio-Doen%C3%A7a%29%20e%20entender%20as%20possibilidades%20para%20o%20meu%20caso." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Conversar sobre meu benefício</a>
+</div>
+
+<script>
+// Mensuração (GTM / Google Ads): cada clique em WhatsApp envia "whatsapp_click" (todos os botões)
+// e, quando houver, o evento específico da seção (whatsapp_click_hero, _solicitacao, _negado, _cessado, _pericia, _final).
+// UTM e GCLID da URL de entrada seguem junto em cada evento.
+(function () {
+  var params = {};
+  try {
+    var q = new URLSearchParams(window.location.search);
+    ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid'].forEach(function (k) { if (q.get(k)) params[k] = q.get(k); });
+  } catch (e) {}
+  window.dataLayer = window.dataLayer || [];
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('[data-cta]');
+    if (!a) return;
+    var base = Object.assign({ cta_posicao: a.getAttribute('data-cta'), lp: 'auxilio-incapacidade' }, params);
+    window.dataLayer.push(Object.assign({ event: 'whatsapp_click' }, base));
+    var ev = a.getAttribute('data-ev');
+    if (ev && ev !== 'whatsapp_click') window.dataLayer.push(Object.assign({ event: ev }, base));
+  });
+})();
+
+// Cabeçalho: logo grande no topo, compacto após rolar
+(function () {
+  var bar = document.querySelector('.topbar');
+  if (!bar) return;
+  var ticking = false;
+  function update() { bar.classList.toggle('is-scrolled', window.scrollY > 24); ticking = false; }
+  window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  update();
+})();
+
+// Barra fixa no celular: aparece só depois que o hero sai da tela
+(function () {
+  var bar = document.getElementById('mobileBar'), hero = document.getElementById('hero');
+  if (!bar || !hero || !('IntersectionObserver' in window)) { if (bar) bar.classList.add('show'); return; }
+  new IntersectionObserver(function (en) { bar.classList.toggle('show', !en[0].isIntersecting); }).observe(hero);
+})();
+
+// Carrossel de avaliações: setas e "Leia mais"
+(function () {
+  var track = document.querySelector('.track');
+  if (!track) return;
+  var prev = document.querySelector('.nav.prev'), next = document.querySelector('.nav.next');
+  function step() { var c = track.querySelector('.gcard'); return c ? c.getBoundingClientRect().width + 20 : 300; }
+  function update() {
+    prev.disabled = track.scrollLeft < 4;
+    next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+  }
+  prev.addEventListener('click', function () { track.scrollBy({ left: -step() }); });
+  next.addEventListener('click', function () { track.scrollBy({ left: step() }); });
+  track.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+  document.querySelectorAll('.gcard').forEach(function (card) {
+    var t = card.querySelector('.gtext'), b = card.querySelector('.more');
+    if (t.scrollHeight <= t.clientHeight + 2) b.hidden = true;
+    b.addEventListener('click', function () {
+      var open = card.classList.toggle('open');
+      b.textContent = open ? 'Mostrar menos' : 'Leia mais';
+      b.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+})();
+</script>
+</body>
+</html>
