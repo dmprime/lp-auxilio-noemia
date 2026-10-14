@@ -92,6 +92,14 @@ section { padding-block: clamp(56px, 8vw, 96px); }
 .hero-photo { position: relative; align-self: end; min-width: 0; }
 .hero-photo img { width: 100%; aspect-ratio: 4 / 4.3; object-fit: cover; object-position: center 20%; border-radius: 8px 8px 0 0; }
 .hero-photo figcaption { position: absolute; left: 14px; bottom: 14px; background: rgba(18, 48, 42, .88); color: #e8efe9; font-size: 13px; padding: 8px 12px; border-radius: 4px; }
+/* Desktop: foto inteira (com os pés), centralizada na altura do texto */
+@media (min-width: 861px) {
+  .hero { padding-bottom: clamp(40px, 6vw, 72px); }
+  .hero-grid { align-items: center; }
+  .hero-copy { padding-bottom: 0; }
+  .hero-photo { align-self: center; }
+  .hero-photo img { aspect-ratio: auto; border-radius: 8px; }
+}
 @media (max-width: 860px) {
   .hero-grid { grid-template-columns: 1fr; }
   .hero-copy { padding-bottom: 0; }
