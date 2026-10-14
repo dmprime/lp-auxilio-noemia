@@ -65,8 +65,8 @@ section { padding-block: clamp(56px, 8vw, 96px); }
 
 /* Header */
 /* Cabeçalho fixo: logo grande no topo da página, reduzido ao rolar (classe .is-scrolled via JS) */
-:root { --logo-top: 72px; --logo-scrolled: 44px; --head-top: calc(var(--logo-top) + 20px); }
-@media (min-width: 861px) { :root { --logo-top: 104px; --head-top: calc(var(--logo-top) + 28px); } }
+:root { --logo-top: 68px; --logo-scrolled: 44px; --head-top: calc(var(--logo-top) + 20px); }
+@media (min-width: 861px) { :root { --logo-top: 99px; --head-top: calc(var(--logo-top) + 28px); } }
 .topbar { position: fixed; inset: 0 0 auto; z-index: 20; padding-top: env(safe-area-inset-top, 0px); background: var(--green-900); color: #fff; transition: box-shadow .2s ease; }
 .topbar.is-scrolled { box-shadow: 0 4px 16px rgba(0, 0, 0, .18); }
 .topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; }
