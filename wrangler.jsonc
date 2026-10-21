@@ -5,9 +5,10 @@
   "assets": {
     "directory": "./"
   },
-  // Domínio próprio (zona noemiaingracio.adv.br na Cloudflare). O workers.dev continua ativo durante a transição.
+  // Domínio próprio (zona noemiaingracio.adv.br na Cloudflare). Endereços *.workers.dev desativados.
   "routes": [
     { "pattern": "lp-auxilio.noemiaingracio.adv.br", "custom_domain": true }
   ],
-  "workers_dev": true
+  "workers_dev": false,
+  "preview_urls": false
 }
