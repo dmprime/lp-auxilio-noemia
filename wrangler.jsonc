@@ -4,5 +4,10 @@
   "compatibility_date": "2026-10-01",
   "assets": {
     "directory": "./"
-  }
+  },
+  // Domínio próprio (zona noemiaingracio.adv.br na Cloudflare). O workers.dev continua ativo durante a transição.
+  "routes": [
+    { "pattern": "lp-auxilio.noemiaingracio.adv.br", "custom_domain": true }
+  ],
+  "workers_dev": true
 }
