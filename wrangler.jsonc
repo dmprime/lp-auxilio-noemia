@@ -6,7 +6,9 @@
     "directory": "./"
   },
   // Domínio próprio (zona noemiaingracio.adv.br na Cloudflare). Endereços *.workers.dev desativados.
+  // auxilio.* é o endereço oficial; lp-auxilio.* fica ligado só para redirecionar links antigos (regra na Cloudflare).
   "routes": [
+    { "pattern": "auxilio.noemiaingracio.adv.br", "custom_domain": true },
     { "pattern": "lp-auxilio.noemiaingracio.adv.br", "custom_domain": true }
   ],
   "workers_dev": false,
